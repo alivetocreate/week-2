@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 folds</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="logo.png">
+</head>
+<body>
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.png" alt="100 folds logo"></a>
+                </div>
+                <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            </nav>
+            <div class="contain">
+                <div class="circle">
+                    <img src="download.jpeg" alt="Profile Image">
+                </div>
+            <div class="header-text">
+               <p>UI/Ux, Graphic Designer, Creative,<br> photographer, Illustrator</p>
+               <h1>Hi, I'm <span>Ian</span> <br>Mutugi From KENYA </h1>
+            </div>
+        </div>
+    </div>
+<!-- ABOUT ME -->
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    
+                    <img src="download (1).jpeg" alt="Ian's photo">
+                
+                </div>
+                <div class="about-column-2">
+                    <h2 class="sub-title">About me</h2>
+                    <p> I am Ian—a creative force navigating seamlessly through graphic design, 
+                        software development, illustration, and photography. 
+                        <br>My professional journey is a testament to adaptability, innovation, 
+                        and a commitment to delivering visually impactful solutions. 
+                        From pixels to illustrations and photographs, each facet of my creativity 
+                        is a chapter in a story that continues to unfold.</p>
+                        
+                        <div class="port"><a href="" class="visit-btn">Portfolio</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="portfolio">Portfolio</h2>
+        <div class="list">
+        <div class="work">
+            <img src="Screenshot 2023-11-21 at 06.37.12.png" alt="">
+            <div class="layer">
+            <h3>cooperate media</h3>
+            <p>This is a poster done for social media for this company.</p>
+        </div>
+        </div>
+        <div class="work">
+            <img src="403589227_891450425316125_3847817605162280100_n.jpg" alt="">
+            <div class="layer">
+            <h3>Artworks</h3>
+            <p>illustrations are good digital arts. They spice photos and push our
+                imagination to the world of infinity
+            </p>
+        </div>
+        </div>
+        </div>
+        <div class="work1">
+            <img src="310173964_5494655957236608_1845150687159866824_n.jpg" alt="">
+            <div class="layer">
+            <h3>illustrations</h3>
+            <p>illustrations are good digital arts. They spice photos and push our
+                imagination to the world of infinity
+            </p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- contacts ayeee -->
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h2 class="sub-title">Reach out</h2>
+            <p><img src="email.png">ianmutugi771@gmail.com</p>
+            <p><img src="telephone-call.png" alt="">0793892282</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ionlylive100/"><img src="instagram.png" alt=""></i></a>
+                <a href="linkedin.com/in/ian-mutugi-206a791b7"><img src="linkedin.png" alt=""></i></a>
+                <a href="https://zinduaschool.slack.com/team/U04L41GHGDN"><img src="slack.png" alt=""></a>
+                <a href="https://github.com/alivetocreate"><img src="github.png" alt=""></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1UdAowgyMlJHDwFAKHJwsS597ciId2Gke/view?usp=drive_link" class="visit-btn">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="sharksharks@gmail.com" required>
+                <textarea name="message"  rows="10" placeholder="your message"></textarea>
+                <button type="submit" class="visit-btn">submit</button>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © ian. - 30 day challenge | Designed by:<span style=" color: rgb (157, 158, 158);">@Ian Mutugi </p>
+    </div>
+</div>
+   
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-mKcJvBsRhodnipDbk6ltnI2MR0e7OsdfmBrKIaJFfZRLBoEuEFvFWd68peUEAvuFaw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+
+</body>
+</html>
